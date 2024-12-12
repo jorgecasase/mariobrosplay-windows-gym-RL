@@ -13,7 +13,7 @@ Pasos necesarios para correr un modelo de RL pre-entrenado con interfaz gráfica
 Puedes entrenar el modelo o cargarlo desde GitHub: 
 - [Notebook para entrenar](https://github.com/pedroconcejero/deep_learning_2024/blob/main/mario_RL_pytorch_tutorial_400_episodes_save_every_1e4.ipynb)
 - [Modelo entrenado](https://github.com/pedroconcejero/deep_learning_2024/blob/main/mario_net_8.chkpt)
-- O en este repositorio hay un modelo con 40000 episodios que termina el nivel: [trained_mario.chkpt](https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/trained_mario.chkpt)
+- O en este mismo repositorio hay un modelo con 40000 episodios que termina el nivel: [trained_mario.chkpt](https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/trained_mario.chkpt)
 
 ## Instalación
 
