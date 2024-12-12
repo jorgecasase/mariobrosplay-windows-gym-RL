@@ -36,12 +36,16 @@ Instala Rustup para usar Jupyter (instalación estándar) desde [aquí](https://
 
 reinicia el cmd y ejecuta: 
 ```bash conda activate mario```
+
 ```bash pip install matplotlib```
+
 ```bash pip install scikit-image```
+
 ```bash pip install jupyter```
 
 ### Crear un kernel para jupyter
 ```bash pip install ipykernel```
+
 ```bash python -m ipykernel install --user --name=mario --display-name "Python (mario)"```
 
 ### Abrir jupyter notebook
