@@ -1,4 +1,4 @@
-# Wath RL IA play mario bros
+# Wath RL IA play mario bros on windows and linux
 
 <div>
   <img src="https://github.com/jorgecasase/github-repos-img/blob/main/img/python.png" alt="python" height="100"/>
@@ -6,7 +6,8 @@
 </div>
 
 This project makes it possible to replicate the real-time AI-controlled Mario game on Windows. 
- 
+
+
 ## Requirements 
 Steps needed to run a pre-trained RL model with GUI to watch it play. Works for native Windows, does not work on Colab. 
 
@@ -16,7 +17,7 @@ You can train the model or upload it from GitHub:
 - [Trained model](https://github.com/pedroconcejero/deep_learning_2024/blob/main/mario_net_8.chkpt)
 - Or in this same repository there is a model with 40000 episodes that finishes the level: [trained_mario.chkpt](https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/trained_mario.chkpt)
 
-## Installation
+## Windows Installation
 
 ### Miniconda
 Download Miniconda for the virtual environment from [here](https://www.anaconda.com/download/). 
@@ -64,7 +65,50 @@ and select the created mario Python kernel (mario)
 
 <img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/6.png" alt="kernel" height="250"/>
 
-## Load Model and Run 
+### Load Model and Run 
+Open `play.ipynb`, put the route of your model `.chkpt` in this cell: ```checkpoint = Path(trained_mario.chkpt)```
+
+<img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/7.png" alt="celda" height="250"/>
+
+Run the entire notebook. A window will now open where you can see the game's graphical interface and AI trainings.
+
+Enjoy watching the AI play Mario in real time!
+
+<img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/8.png" alt="marioplay" height="250"/>
+
+## Ubuntu/Linux? Installation
+
+### Miniconda
+Download Miniconda for the virtual environment for linux [here](https://www.anaconda.com/download/). 
+
+Run installation with ```sh Miniconda3-latest-Linux-x86_64.sh```
+
+### Create the Virtual Environment 
+Create the virtual environment with the file `environment.yml`: 
+```bash conda env create -f environment.yml```
+
+### Install Jupyter
+```conda activate mario```
+
+```pip install matplotlib```
+
+```pip install scikit-image```
+
+```pip install jupyter```
+
+### Create a jupyter kernel
+```pip install ipykernel```
+
+```python -m ipykernel install --user --name=mario --display-name "Python (mario)"```
+
+### Open jupyter notebook
+open jupyter with 
+```jupyter notebook```
+and select the created mario Python kernel (mario)
+
+<img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/6.png" alt="kernel" height="250"/>
+
+### Load Model and Run 
 Open `play.ipynb`, put the route of your model `.chkpt` in this cell: ```checkpoint = Path(trained_mario.chkpt)```
 
 <img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/7.png" alt="celda" height="250"/>
