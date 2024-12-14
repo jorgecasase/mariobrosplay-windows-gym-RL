@@ -44,28 +44,28 @@ Install Rustup to use Jupyter (standard installation) from [here](https://rustup
 <img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/5.png" alt="rust" height="250"/>
 
 restart cmd and run: 
-```bash conda activate mario```
+```conda activate mario```
 
-```bash pip install matplotlib```
+```pip install matplotlib```
 
-```bash pip install scikit-image```
+```pip install scikit-image```
 
-```bash pip install jupyter```
+```pip install jupyter```
 
 ### Create a jupyter kernel
-```bash pip install ipykernel```
+```pip install ipykernel```
 
-```bash python -m ipykernel install --user --name=mario --display-name "Python (mario)"```
+```python -m ipykernel install --user --name=mario --display-name "Python (mario)"```
 
 ### Open jupyter notebook
 open jupyter with 
-```bash jupyter notebook```
+```jupyter notebook```
 and select the created mario Python kernel (mario)
 
 <img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/6.png" alt="kernel" height="250"/>
 
 ## Load Model and Run 
-Open `play.ipynb`, put the route of your model `.chkpt` in this cell: ```python checkpoint = Path(trained_mario.chkpt)```
+Open `play.ipynb`, put the route of your model `.chkpt` in this cell: ```checkpoint = Path(trained_mario.chkpt)```
 
 <img src="https://github.com/jorgecasase/mariobrosplay-windows-gym-RL/blob/main/img/7.png" alt="celda" height="250"/>
 
